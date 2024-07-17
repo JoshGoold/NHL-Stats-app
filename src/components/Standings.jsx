@@ -38,12 +38,13 @@ const Standings = () => {
                     <img src={team.teamLogo} className="h-20 w-20 rounded-lg" />
                     <h1>{team.teamName.default}</h1>
                     </div>
-                    <div className="flex items-center gap-4 justify-center text-2xl font-bold">
-                        <h2 className="px-2 py-2">{team.wins} W </h2>
-                        <h2 className=" px-2 py-2">{team.losses} L </h2>
-                        <h2 className=" px-2 py-2">{team.otLosses} OT/L </h2>
-                        <h2 className=" px-2 py-2">{team.points} P </h2>
-                        <h2 className=" px-2 py-2">#{++rank}</h2>
+                    <div className="flex items-center gap-2 justify-center font-bold">
+                        <h2 className=" px-2 shadow-md bg-neutral-800 bg-opacity-30  py-2">#{++rank}</h2>
+                        <h2 className="px-2 shadow-md bg-neutral-800 bg-opacity-30 py-2">{team.wins} W </h2>
+                        <h2 className=" px-2 shadow-md bg-neutral-800  bg-opacity-30 py-2">{team.losses} L </h2>
+                        <h2 className=" px-2 shadow-md bg-neutral-800 bg-opacity-30   py-2">{team.otLosses} OT/L </h2>
+                        <h2 className=" px-2 shadow-md bg-neutral-800  bg-opacity-30 py-2">{team.points} P </h2>
+                        
                     </div>
                 </div>
             ))}

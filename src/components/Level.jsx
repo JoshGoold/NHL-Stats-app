@@ -11,41 +11,6 @@ const Level = () => {
 
   const nav = useNavigate();
 
-  const nhlTeams = [
-    "ANA",
-    "ARI",
-    "BOS",
-    "BUF",
-    "CGY",
-    "CHI",
-    "COL",
-    "CBJ",
-    "DAL",
-    "DET",
-    "EDM",
-    "FLA",
-    "LAK",
-    "MIN",
-    "MTL",
-    "NSH",
-    "NJD",
-    "NYI",
-    "NYR",
-    "PHI",
-    "PIT",
-    "SEA",
-    "SJS",
-    "STL",
-    "TBL",
-    "TOR",
-    "VAN",
-    "VGK",
-    "WPG",
-    "WSH",
-  ];
-
-  const hockeyCardSelector = () => {};
-
  
   useEffect(() => {
     teamApi();
